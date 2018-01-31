@@ -2,9 +2,13 @@ package client;
 
 public class Client {
 	
-	int a = 10;
-	int b = 20;
-	int c = 30;
-	int d = 40;
+	public static void main(String[] args) {
+
+		String ip = "70.12.111.131";
+		int port = 8888;
+		ClientChat chat = null;
+		chat = new ClientChat(ip, port);
+		
+	}
 	
 }
