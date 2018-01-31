@@ -3,8 +3,10 @@ package server;
 public class Server {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		ServerChat serverChat = null;
+		serverChat = new ServerChat(8888);
+		
 	}
 
 }
