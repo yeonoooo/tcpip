@@ -29,6 +29,10 @@ public class Client {
 			// outw.write("KyeonghoKim");
 			System.out.println("Send Completed");
 
+			
+			
+			
+			
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
