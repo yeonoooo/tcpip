@@ -43,10 +43,14 @@ public class ClientChat {
 		
 		Receiver receiver = new Receiver();
 		receiver.start();//자동으로 run()이 실행됨
-
+		
+		Sender sender = new Sender();//runnable interface 구현 방법
+		Thread t = new Thread(sender);
+		System.out.println("별명을 입력하세요.");
+		String nickname = scanner.nextLine();
+		
 		while (true) {
-			Sender sender = new Sender();//runnable interface
-			Thread t = new Thread(sender);
+			
 			System.out.println("Input Client Message...");
 			String msg = scanner.nextLine();
 			if(msg.equals("q")) {

@@ -49,7 +49,7 @@ public class ServerChat {
 			Thread t = new Thread(sender);
 			System.out.println("Input Server Message...");
 			String msg = scanner.nextLine();
-			if (msg.equals("end")) {
+			if (msg.equals("q")) {
 				scanner.close();
 				sender.close();
 				break;
